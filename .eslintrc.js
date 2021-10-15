@@ -6,15 +6,14 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier'
+    'plugin:prettier/recommended'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 2020,
     sourceType: 'module',
     project: './tsconfig.eslint.json'
   },
-  plugins: ['@typescript-eslint'],
   rules: {
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': [
